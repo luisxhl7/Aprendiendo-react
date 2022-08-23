@@ -7,7 +7,6 @@ export const CounterApp = ({value}) => {
     const [ counter, setCounter ] = useState( value );
     
     const sumar = ()=> {
-        //console.log("ads");
         setCounter(counter + 1);
     }
     const restar = () => {
@@ -16,11 +15,12 @@ export const CounterApp = ({value}) => {
     const limpiar = () => {
         setCounter( value );
     }
+    /*-----------------------------------------VISTA-----------------------------------------*/
     return(
         <>
             <h1>CounterApp</h1>
             <h2>{counter}</h2>
-            <button onClick={sumar}>+1</button>
+            <button onClick={sumar} name="hola">+1</button>
             <button onClick={restar}>-1</button>
             <button onClick={limpiar}>limpiar</button>
         </>
